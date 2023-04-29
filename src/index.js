@@ -10,4 +10,4 @@ headerEkleyici('.header-container')
 tabEkleyici('.tabs-container')
 cardEkleyici('.cards-container')
 
-console.log('Teknoloji Zamanı yüklendi!aaaaaaaaaaaaaaaaaaaaaaa')
+console.log('Teknoloji Zamanı yüklendi!')

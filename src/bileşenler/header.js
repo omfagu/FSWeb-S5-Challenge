@@ -11,7 +11,31 @@ const Header = (baslik, tarih, yazi) => {
   //    <span class="temp">{ yazi }</span>
   //  </div>
   //
-}
+
+  
+
+  const header = document.createElement('div');
+  header.setAttribute("class", "header");
+
+  const dataSpan = document.createElement('span');
+  dataSpan.setAttribute("class", "date");
+  dataSpan.textContent = tarih;
+  header.append(dataSpan);
+
+  const baslikH1 = document.createElement('h1');
+  baslikH1.textContent = baslik;
+  header.append(baslikH1);
+
+  const tempSpan = document.createElement('span');
+  tempSpan.setAttribute("class", "temp");
+  tempSpan.textContent = yazi;
+  header.append(tempSpan);
+
+
+  return header;
+
+
+ }
 
 const headerEkleyici = (secici) => {
   // GÖREV 2
@@ -23,6 +47,14 @@ const headerEkleyici = (secici) => {
 
   // İPUCU: querySelector bir string alabilir (bknz: querySelector("#wrapper")) 
   // fakat aynı zamanda bir değişken de alabilir (bknz: querySelector(secici))
+
+  const select = document.querySelector(secici);
+  const header = Header("Workintech", "29.04.2023", "Eğitim");
+  select.appendChild(header);
+
+
+
+  
  
 }
 
